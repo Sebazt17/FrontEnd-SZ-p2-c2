@@ -1,0 +1,516 @@
+:root {
+    --color-primario: #2e8b57;
+    --color-secundario: #B3B895;
+    --color-fondo: #E6E6D5;
+    --color-fondo-hero: #FAF8EB;
+    --color-texto: #333;
+    --color-texto-claro: #555;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --color-footer: #333;
+    --sombra: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .boton {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .boton-primario {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+  }
+  
+  .boton-primario:hover {
+    background-color: #1e6b47;
+  }
+  
+  .boton-secundario {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+  }
+  
+  .boton-secundario:hover {
+    background-color: #333;
+  }
+  
+  .boton-grande {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+  
+  .section {
+    padding: 60px 20px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    color: var(--color-primario);
+    margin-bottom: 40px;
+    margin-left: 10%;
+  }
+  
+  header {
+    background-color: var(--color-secundario);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 100%;
+    width: auto;
+    max-height: 60px;
+    object-fit: contain;
+  }
+  
+  .navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navegacion li {
+    margin-left: 20px;
+  }
+  
+  .navegacion a {
+    color: var(--color-negro);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navegacion a:hover {
+    color: var(--color-primario);
+    text-decoration: underline;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--color-fondo-hero);
+  }
+  
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 128px;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 20px;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+  }
+  
+  .hero h2 {
+    font-size: 24px;
+    color: var(--color-texto);
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-weight: normal;
+  }
+  
+  .contribuimos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .contribucion {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contribucion img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contribucion img:hover {
+    transform: scale(1.05);
+  }
+  
+  .contribucion h3 {
+    font-size: 24px;
+    color: var(--color-primario);
+    margin: 15px 0;
+  }
+  
+  .contribucion p {
+    color: var(--color-texto-claro);
+    line-height: 1.5;
+  }
+  
+  .combatir-section {
+    background-color: var(--color-blanco);
+  }
+  
+  .combatimos {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .combatimos-texto {
+    width: 50%;
+    padding-right: 40px;
+  }
+  
+  .combatimos-imagen {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .combatimos p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .numero {
+    font-weight: bold;
+    color: var(--color-primario);
+    font-size: 24px;
+  }
+  
+  .combatimos-imagen img {
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .soluciones {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .solucion {
+    width: 48%;
+    text-align: center;
+  }
+  
+  .solucion img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .solucion h3 {
+    color: var(--color-primario);
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .solucion p {
+    color: var(--color-texto-claro);
+  }
+  
+  .testimonios-section {
+    background-color: var(--color-fondo-hero);
+  }
+  
+  .testimonios {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .testimonio {
+    width: 30%;
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+  }
+  
+  .testimonio blockquote {
+    font-style: italic;
+    color: var(--color-texto-claro);
+    margin-bottom: 20px;
+  }
+  
+  .testimonio cite {
+    font-weight: bold;
+    color: var(--color-primario);
+    font-style: normal;
+  }
+  
+  .cta {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+  }
+  
+  .cta h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-contenido {
+    background-color: var(--color-blanco);
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+  .cerrar {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-texto-claro);
+  }
+  
+  .cerrar:hover {
+    color: var(--color-negro);
+  }
+  
+  .formulario {
+    margin-top: 20px;
+  }
+  
+  .formulario input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .formulario button {
+    margin-top: 20px;
+  }
+  
+  .formulario a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--color-primario);
+    text-decoration: none;
+  }
+  
+  .formulario a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: var(--color-footer);
+    color: var(--color-blanco);
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .enlaces-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .enlaces-footer a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .enlaces-footer a:hover {
+    color: var(--color-primario);
+  }
+  
+  .enlaces-footer button {
+    margin: 0 15px;
+  }
+  
+  .redes-sociales {
+    margin-top: 20px;
+  }
+  
+  .redes-sociales a {
+    margin: 0 10px;
+    color: var(--color-primario);
+    background-color: var(--color-blanco);
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .redes-sociales a:hover {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+  }
+  
+  @media (max-width: 1024px) {
+    .hero h1 {
+      font-size: 96px;
+    }
+    
+    .combatimos {
+      flex-direction: column;
+    }
+    
+    .combatimos-texto, .combatimos-imagen {
+      width: 100%;
+      padding-right: 0;
+    }
+    
+    .combatimos-imagen {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding: 15px;
+    }
+    
+    .logo {
+      margin-bottom: 15px;
+    }
+    
+    .navegacion ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .navegacion li {
+      margin: 5px 0;
+    }
+    
+    .hero h1 {
+      font-size: 64px;
+    }
+    
+    .hero h2 {
+      font-size: 20px;
+    }
+    
+    .contribuimos {
+      flex-direction: column;
+    }
+    
+    .contribucion {
+      width: 100%;
+    }
+    
+    .soluciones {
+      flex-direction: column;
+    }
+    
+    .solucion {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    
+    .solucion:last-child {
+      margin-bottom: 0;
+    }
+    
+    .testimonios {
+      flex-direction: column;
+    }
+    
+    .testimonio {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .enlaces-footer {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .enlaces-footer button {
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 48px;
+    }
+    
+    .section-title {
+      margin-left: 0;
+      text-align: center;
+    }
+    
+    .modal-contenido {
+      padding: 20px;
+    }
+  }
